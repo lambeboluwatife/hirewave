@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Nunito:wght@300&family=Open+Sans:wght@800&display=swap");
+
+:root {
+  --primary-color: #ffa500;
+  --secondary-color: #1b0065;
+  --tertiary-color: #090020;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+.logo {
+  cursor: pointer;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: rgba(9, 0, 32, 0.7);
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: var(--primary-color);
+}
+
+header .login-btn {
+  display: inline-block;
+  padding: 0px 20px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: rgba(9, 0, 32, 0.7);
+}
+
+header .login-btn:hover {
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+header .signup-btn {
+  border-radius: 10px;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease 0s;
+  color: var(--secondary-color);
+}
+
+header .signup-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--tertiary-color);
+  color: #ffffff;
+}
+
+footer .container {
+  padding-top: 40px;
+}
+
+footer h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+footer h6 {
+  color: rgba(255, 255, 255, 0.76);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding-top: 20px;
+}
+
+.resources .h4,
+.policy .h4,
+.support .h4 {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li a {
+  transition: all 0.3s ease 0s;
+  color: rgba(255, 255, 255, 0.76);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding-top: 20px;
+}
+
+.footer-links li a h6:hover {
+  color: var(--primary-color);
+}
+
+.footer-links li a h6 {
+  padding-top: 10px;
+}
+
+.socials {
+  padding-top: 10px;
+}
+
+.socials svg {
+  padding-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.socials svg:hover {
+  width: 30px;
+  height: 30px;
+}
+
+hr {
+  background-color: rgba(255, 255, 255, 0.76);
+}
+
+.copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.76);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding-bottom: 20px;
+}
