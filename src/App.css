@@ -11,6 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 10%;
+  height: 10vh;
 }
 
 .logo {
@@ -65,7 +66,7 @@ header .login-btn:hover {
   font-weight: 900;
 }
 
-header .signup-btn {
+.signup-btn {
   border-radius: 10px;
   padding: 12px 24px;
   background-color: var(--primary-color);
@@ -73,11 +74,185 @@ header .signup-btn {
   border: none;
   transition: all 0.3s ease 0s;
   color: var(--secondary-color);
+  font-weight: 600;
 }
 
-header .signup-btn:hover {
+.signup-btn:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+}
+
+.showcase {
+  height: 90vh;
+}
+
+.showcase-content {
+  padding-top: 5rem;
+}
+
+.showcase-content h1 {
+  color: var(--tertiary-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  margin-top: 2rem;
+}
+
+.showcase-content h6 {
+  color: rgba(9, 0, 32, 0.7);
+  font-family: "Nunito", sans-serif;
+  font-size: small;
+  font-style: normal;
+  line-height: 150%;
+  margin: 30px 0 30px 0;
+}
+
+.candidates {
+  margin: 80px 0 80px 0;
+  position: relative;
+}
+
+.candidates img {
+  width: 60px;
+  height: 60px;
+}
+
+.candidates .ellipse-1 {
+  position: relative;
+  z-index: 1;
+}
+
+.candidates .ellipse-2 {
+  position: absolute;
+  z-index: 2;
+  left: 9%;
+}
+
+.candidates .ellipse-3 {
+  position: absolute;
+  z-index: 3;
+  left: 17%;
+}
+
+.candidates .ellipse-4 {
+  position: absolute;
+  z-index: 4;
+  left: 25%;
+}
+
+.candidates .ellipse-5 {
+  position: absolute;
+  z-index: 5;
+  left: 34%;
+}
+
+.candidates .ellipse-6 {
+  position: absolute;
+  z-index: 6;
+  left: 43%;
+}
+
+.candidates h5 {
+  position: absolute;
+  color: var(--tertiary-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  z-index: 7;
+  display: inline;
+  left: 46%;
+  top: 25%;
+}
+
+.candidates h6 {
+  position: absolute;
+  color: var(--tertiary-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  z-index: 7;
+  display: inline;
+  left: 56%;
+}
+
+.showcase-image {
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+}
+
+.item-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* position: absolute;
+  z-index: 2; */
+}
+
+/* .orange {
+  position: absolute;
+  z-index: 1;
+  border: none;
+  opacity: 0.6;
+  background: radial-gradient(circle, var(--primary-color), #fff);
+  height: 50vh;
+  width: 70%;
+  border-radius: 50%;
+  top: 30%;
+  left: 10%;
+} */
+
+.jumbotron {
+  height: 40vh;
+  background: rgba(255, 165, 0, 0.69);
+  text-align: center;
+  padding: 4rem;
+}
+
+.jumbotron h3 {
+  color: var(--tertiary-color);
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.jumbotron-image {
+  padding: 2rem 10rem 2rem 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.jumbotron-image .atica {
+  width: 58px;
+  height: 58px;
+}
+
+.jumbotron-image .amara {
+  width: 144.653px;
+  height: 38px;
+}
+
+.jumbotron-image .solaytic {
+  width: 146.483px;
+  height: 47px;
+}
+
+.jumbotron-image .aven {
+  width: 113.9px;
+  height: 34px;
+}
+
+.jumbotron-image .foxhub {
+  width: 145.407px;
+  height: 34px;
 }
 
 footer {
