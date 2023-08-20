@@ -45,12 +45,12 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className="btn">
+        <div>
           <a className="login-btn" href="/login">
             Log in
           </a>
           <a href="/signup">
-            <button className="signup-btn">Sign up</button>
+            <button className="btn">Sign up</button>
           </a>
         </div>
       </header>

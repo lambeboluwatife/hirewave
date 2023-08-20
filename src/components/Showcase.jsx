@@ -13,7 +13,7 @@ const Showcase = () => {
               thriving businesses.
             </h6>
             <a href="/jobs">
-              <button className="signup-btn">Explore Jobs</button>
+              <button className="btn">Explore Jobs</button>
             </a>
             <div className="candidates">
               <img className="ellipse-1" src="/Ellipse 207.svg" alt="" />

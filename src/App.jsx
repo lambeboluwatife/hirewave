@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Showcase from "./components/Showcase";
 import Jumbotron from "./components/Jumbotron";
+import About from "./components/About";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <>
               <Showcase />
               <Jumbotron />
+              <About />
             </>
           }
         />
