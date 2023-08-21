@@ -9,9 +9,12 @@ import Jumbotron from "./components/Jumbotron";
 import About from "./components/About";
 import FeaturedJobs from "./components/FeaturedJobs";
 import data from "./data/jobs";
+import servicesData from "./data/services";
+import Services from "./components/Services";
 
 const App = () => {
   const [jobs] = useState(data);
+  const [services] = useState(servicesData);
   return (
     <Router>
       <Header />
@@ -24,6 +27,7 @@ const App = () => {
               <Jumbotron />
               <About />
               <FeaturedJobs jobs={jobs} />
+              <Services services={services} />
             </>
           }
         />
