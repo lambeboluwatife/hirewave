@@ -343,6 +343,93 @@ header .login-btn:hover {
   margin-right: 1rem;
 }
 
+.featured-title {
+  margin: 3rem 0 3rem 0;
+  overflow: hidden;
+}
+
+.featured-title h2 {
+  color: #3e3e3e;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -1.28px;
+  display: inline;
+}
+
+.featured-title a {
+  color: #ffa500;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  float: right;
+}
+
+.featured-title a:hover {
+  color: var(--secondary-color);
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 0.5px solid rgba(9, 0, 32, 0.7);
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 1rem;
+}
+
+.item-container .item-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.item-container .item-details {
+  margin-left: 2rem;
+}
+
+.item-container .item-details-2 {
+  text-align: right;
+  margin-left: auto;
+}
+
+.item-container .item-details h3 {
+  color: var(--tertiary-color);
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.item-container .item-details h4 {
+  color: rgba(9, 0, 32, 0.7);
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.item-container .item-details span {
+  color: var(--tertiary-color);
+  font-family: "Nunito", sans-serif;
+  /* font-size: 14px; */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.item-container .item-details-2 h6 {
+  color: var(--tertiary-color);
+  font-family: "Nunito", sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 footer {
   background-color: var(--tertiary-color);
   color: #ffffff;

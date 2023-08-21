@@ -7,8 +7,11 @@ import Footer from "./components/Footer";
 import Showcase from "./components/Showcase";
 import Jumbotron from "./components/Jumbotron";
 import About from "./components/About";
+import FeaturedJobs from "./components/FeaturedJobs";
+import data from "./data/jobs";
 
 const App = () => {
+  const [jobs] = useState(data);
   return (
     <Router>
       <Header />
@@ -20,6 +23,7 @@ const App = () => {
               <Showcase />
               <Jumbotron />
               <About />
+              <FeaturedJobs jobs={jobs} />
             </>
           }
         />
