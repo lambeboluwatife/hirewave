@@ -40,8 +40,8 @@ const App = () => {
               <Showcase />
               <Jumbotron />
               <About />
-              <FeaturedJobs jobs={jobs} />
               <Services services={services} />
+              <FeaturedJobs jobs={jobs} />
               <FAQ toggle={toggle} faqs={faqs} selected={selected} />
             </>
           }
