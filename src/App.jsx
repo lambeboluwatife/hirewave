@@ -9,12 +9,26 @@ import Jumbotron from "./components/Jumbotron";
 import About from "./components/About";
 import FeaturedJobs from "./components/FeaturedJobs";
 import data from "./data/jobs";
+import faqsData from "./data/faq";
 import servicesData from "./data/services";
 import Services from "./components/Services";
+import FAQ from "./components/FAQ";
 
 const App = () => {
   const [jobs] = useState(data);
   const [services] = useState(servicesData);
+  const [faqs] = useState(faqsData);
+
+  const [selected, setSelected] = useState(null);
+
+  const toggle = (i) => {
+    if (selected === i) {
+      return setSelected(null);
+    }
+
+    setSelected(i);
+  };
+
   return (
     <Router>
       <Header />
@@ -28,6 +42,7 @@ const App = () => {
               <About />
               <FeaturedJobs jobs={jobs} />
               <Services services={services} />
+              <FAQ toggle={toggle} faqs={faqs} selected={selected} />
             </>
           }
         />
