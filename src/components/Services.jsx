@@ -4,11 +4,12 @@ const Services = ({ services }) => {
       <div className="container">
         <h2>Our Services</h2>
         <h6 className="service-detail">
-          Our tailored services connect you with top emerging talent, ensuring
-          your team stays competitive and dynamic. <br />
-          From custom recruitment campaigns to internship programs, we’re here
-          to help you build a thriving workplace that <br /> shapes the future
-          of your business.
+          Our tailored services connect you with top emerging talent, <br />{" "}
+          ensuring your team stays competitive and dynamic. From custom <br />
+          recruitment campaigns to internship programs, we’re here to help{" "}
+          <br /> you build a thriving workplace that shapes the future of your{" "}
+          <br />
+          business.
         </h6>
         <div className="services-content">
           {services.map((service) => (

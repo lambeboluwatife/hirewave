@@ -1,22 +1,22 @@
-import talent from "/Job Choose Candidate.svg";
-import campaign from "/Job Responsibility Bag Thumbs Up.svg";
-import election from "/Election Campaign 1.svg";
+import campaign from "/Job Choose Candidate.svg";
+import election from "/Job Responsibility Bag Thumbs Up.svg";
+import talent from "/Election Campaign 1.svg";
 import resume from "/ph_read-cv-logo-thin.svg";
 
 const services = [
-  {
-    title: "Talent Matching",
-    image: talent,
-    description:
-      "We connect businesses with a pool of carefully vetted fresh graduates whose skills and aspirations align with the company’s vision and needs.",
-    id: 1,
-  },
   {
     title: "Customized Recruitment Campaigns",
     image: campaign,
     description:
       "We tailor recruitment strategies to match the unique requirements of each business, ensuring a higher success rate in finding the right candidates.",
     id: 2,
+  },
+  {
+    title: "Talent Matching",
+    image: talent,
+    description:
+      "We connect businesses with a pool of carefully vetted fresh graduates whose skills and aspirations align with the company’s vision and needs.",
+    id: 1,
   },
   {
     title: "Internship Programs",

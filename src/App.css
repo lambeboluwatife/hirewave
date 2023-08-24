@@ -223,10 +223,10 @@ header .login-btn:hover {
 }
 
 .jumbotron {
-  height: 40vh;
+  height: 30vh;
   background: rgba(255, 165, 0, 0.69);
   text-align: center;
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .jumbotron h3 {
@@ -280,7 +280,7 @@ header .login-btn:hover {
   font-weight: 600;
   line-height: 125%;
   letter-spacing: -1.28px;
-  margin: 6rem 0 2rem 0;
+  margin: 4rem 0 2rem 0;
 }
 
 .about-us h6 {
@@ -314,9 +314,9 @@ header .login-btn:hover {
   color: var(--tertiary-color);
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  font-size: 40px;
+  font-size: 25px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 125%;
 }
 
@@ -324,7 +324,7 @@ header .login-btn:hover {
   color: #000;
   text-align: center;
   font-family: "Nunito", sans-serif;
-  font-size: xx-small;
+  font-size: 15px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
@@ -398,13 +398,14 @@ header .login-btn:hover {
   line-height: 125%;
 }
 
-.item-container .item-details h4 {
+.item-container .item-details h5 {
   color: rgba(9, 0, 32, 0.7);
   font-family: "Nunito", sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  padding: 0.2rem 0 0.2rem 0;
 }
 
 .item-container .item-details span {
@@ -413,6 +414,9 @@ header .login-btn:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  border-radius: 10px;
+  background: rgba(150, 179, 0, 0.5);
+  padding: 1px 10px 1px 10px;
 }
 
 .item-container .item-details-2 h6 {
@@ -422,10 +426,11 @@ header .login-btn:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  padding: 0.2rem;
 }
 
 .services {
-  background-color: #fff0d4;
+  background: rgba(255, 165, 0, 0.35);
   margin-top: 3rem;
   padding: 3rem;
 }
@@ -439,7 +444,7 @@ header .login-btn:hover {
   line-height: 125%;
   letter-spacing: -1.28px;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
 }
 
 .services .service-detail {
@@ -448,9 +453,9 @@ header .login-btn:hover {
   font-size: small;
   font-weight: 600;
   font-style: normal;
-  line-height: 150%;
-  padding: 1rem;
-  text-align: center;
+  line-height: 1.7;
+  text-align: left;
+  padding-top: 1rem;
 }
 
 .services-content {
@@ -461,10 +466,16 @@ header .login-btn:hover {
 
 .service-item {
   border-radius: 10px;
-  border: 0.5px solid rgba(9, 0, 32, 0.7);
   padding: 2rem 1rem 2rem 1rem;
   margin: 1rem;
-  height: 298px;
+  height: 270px;
+  background: #fff;
+}
+
+.service-item img {
+  background: #96b300;
+  padding: 5px;
+  border-radius: 2px;
 }
 
 .service-item h4 {
@@ -478,7 +489,7 @@ header .login-btn:hover {
   font-weight: 600;
   font-style: normal;
   line-height: 150%;
-  padding: 0.5rem 1rem 0 0;
+  padding: 0 1rem 0 0;
 }
 
 .faq {
@@ -566,21 +577,24 @@ header .login-btn:hover {
 }
 
 .faq-jumbo .content {
-  color: var(--tertiary-color);
-  font-family: "Nunito", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem 0 1rem;
+}
+
+.faq-jumbo .content h6 {
+  color: var(--tertiary-color);
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
   padding: 0 4rem 0 4rem;
 }
 
-.faq-jumbo .content span {
-  font-weight: 900;
-  color: red;
+.faq-jumbo .content h6 span {
+  font-weight: 700;
+  color: #fff;
 }
 
 footer {
