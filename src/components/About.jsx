@@ -4,14 +4,14 @@ const About = () => {
       <h2>About Us</h2>
       <h6>
         Are you a small business looking to harness the energy and innovation
-        that young graduates <br /> bring? Look no further. At Hirewave, our
-        mission is to connect you with the best emerging talent, <br /> helping
-        you build a dynamic team that drives growth and innovation.{" "}
+        that young graduates bring? <br /> Look no further. At Hirewave, our
+        mission is to connect you with the best emerging talent, helping you{" "}
+        <br /> build a dynamic team that drives growth and innovation.{" "}
       </h6>
       <h6>
         With a focus on creating mutually beneficial partnerships, we empower
         both businesses and <br /> graduates to succeed. Join us in shaping the
-        future of work. Explore our services and discover how <br /> we can be
+        future of work. Explore our services and discover how we <br /> can be
         your partner in unlocking potential.
       </h6>
       <div className="data">
