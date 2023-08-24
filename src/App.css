@@ -88,6 +88,17 @@ header .login-btn:hover {
   font-weight: 600;
 }
 
+.btn3 {
+  border: 1px solid var(--tertiary-color);
+  background: transparent;
+  border-radius: 10px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: var(--tertiary-color);
+  font-weight: 600;
+}
+
 .btn:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -99,6 +110,11 @@ header .login-btn:hover {
   border: none;
   transition: all 0.3s ease 0s;
   color: var(--secondary-color);
+}
+
+.btn3:hover {
+  background: var(--tertiary-color);
+  color: var(--primary-color);
 }
 
 .showcase {
@@ -205,27 +221,6 @@ header .login-btn:hover {
   overflow: hidden;
   height: 90vh;
 }
-
-.item-image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  /* position: absolute;
-  z-index: 2; */
-}
-
-/* .orange {
-  position: absolute;
-  z-index: 1;
-  border: none;
-  opacity: 0.6;
-  background: radial-gradient(circle, var(--primary-color), #fff);
-  height: 50vh;
-  width: 70%;
-  border-radius: 50%;
-  top: 30%;
-  left: 10%;
-} */
 
 .jumbotron {
   height: 40vh;
@@ -484,6 +479,108 @@ header .login-btn:hover {
   font-style: normal;
   line-height: 150%;
   padding: 0.5rem 1rem 0 0;
+}
+
+.faq {
+  margin-top: 3rem;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.faq h1 {
+  color: var(--tertiary-color);
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+
+.faq h5 {
+  color: rgba(9, 0, 32, 0.7);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+.faqs {
+  margin-top: 3rem;
+}
+
+.accordion {
+  width: 800px;
+}
+
+.faq-item {
+  padding: 20px;
+  width: 50rem;
+  cursor: pointer;
+}
+
+.faq-item .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item h4 {
+  color: var(--tertiary-color);
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.faq-item img {
+  float: right;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.faq-item .content {
+  color: var(--tertiary-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.faq-item .content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.3s ease 0s;
+}
+
+.faq-jumbo {
+  background-color: var(--primary-color);
+  padding: 3rem;
+  margin-bottom: 4rem;
+}
+
+.faq-jumbo .content {
+  color: var(--tertiary-color);
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem 0 4rem;
+}
+
+.faq-jumbo .content span {
+  font-weight: 900;
+  color: red;
 }
 
 footer {
