@@ -8,12 +8,12 @@ const Showcase = () => {
               Your Partner in <br /> Hiring Excellence
             </h1>
             <h6>
-              Need to discover top-tier talent for your business, look no
-              further. We <br /> bridge the gap between fresh talent and
+              Need to discover top-tier talent for your business? <br /> Look no
+              further. We bridge the gap between fresh <br /> talent and
               thriving businesses.
             </h6>
             <a href="/jobs">
-              <button className="btn">Explore Jobs</button>
+              <button className="btn btn-explore">Explore Jobs</button>
             </a>
             <div className="candidates">
               <img className="ellipse-1" src="/Ellipse 207.svg" alt="" />
@@ -26,11 +26,15 @@ const Showcase = () => {
               <h6>Candidates</h6>
             </div>
           </div>
-          <div className="showcase-image">
-            {/* <div className="orange"></div> */}
-            <img src="/backdrop.jpg" alt="backdrop" className="item-image" />
-          </div>
+          <div className="showcase-image"></div>
         </div>
+      </div>
+      <div className="box">
+        <img
+          src="/Rectangle 493.jpg"
+          alt="backdrop"
+          className="backdrop-image"
+        />
       </div>
     </div>
   );
