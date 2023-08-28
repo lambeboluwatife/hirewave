@@ -249,7 +249,8 @@
 .post-job {
   border-radius: 10px;
   border: 0.5px solid #000;
-  padding: 2rem;
+  padding: 3rem;
+  margin-bottom: 5rem;
 }
 
 .post-job h2 {
@@ -281,4 +282,66 @@
 
 .post-job hr {
   background: #b6b6b6;
+}
+
+.input-box h4 {
+  color: #6d6d6d;
+  font-family: "Open Sans", sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-top: 1rem;
+  padding-bottom: 0.3rem;
+}
+
+.input-box sup {
+  color: red;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(52, 6, 179, 0.1);
+  background: #fff;
+  font-family: "Nunito", sans-serif;
+  width: 450px;
+  height: 56px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4d73f8;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.input-box span {
+  color: #6d6d6d;
+  font-family: "Nunito", sans-serif;
+  font-size: smaller;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 0.5rem;
+}
+
+textarea {
+  height: 112px;
+  width: 100%;
+}
+
+form button {
+  margin-top: 1rem;
 }
