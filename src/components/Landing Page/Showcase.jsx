@@ -1,19 +1,28 @@
-const Showcase = () => {
+const Showcase = ({ showcase }) => {
   return (
     <div className="showcase">
       <div className="container">
+        {showcase.svg && (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="203"
+            height="210"
+            viewBox="0 0 203 210"
+            fill="none"
+          >
+            <path
+              d="M198.558 205.042L6.47273 139.012L159.699 5.67596L198.558 205.042Z"
+              stroke="#96B300"
+              stroke-width="6"
+            />
+          </svg>
+        )}
         <div className="grid">
           <div className="showcase-content">
-            <h1>
-              Your Partner in <br /> Hiring Excellence
-            </h1>
-            <h6>
-              Need to discover top-tier talent for your business? <br /> Look no
-              further. We bridge the gap between fresh <br /> talent and
-              thriving businesses.
-            </h6>
+            <h1>{showcase.title}</h1>
+            <h6>{showcase.text}</h6>
             <a href="/jobs">
-              <button className="btn btn-explore">Explore Jobs</button>
+              <button className="btn btn-explore">{showcase.button}</button>
             </a>
             <div className="candidates">
               <img className="ellipse-1" src="/Ellipse 207.svg" alt="" />
@@ -28,13 +37,6 @@ const Showcase = () => {
           </div>
           <div className="showcase-image"></div>
         </div>
-      </div>
-      <div className="box">
-        <img
-          src="/Rectangle 493.jpg"
-          alt="backdrop"
-          className="backdrop-image"
-        />
       </div>
     </div>
   );

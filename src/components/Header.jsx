@@ -32,16 +32,16 @@ const Header = () => {
         <nav>
           <ul className="nav-links">
             <li>
-              <a href="/earrings">Jobs</a>
+              <a href="/jobs">Jobs</a>
             </li>
             <li>
-              <a href="/necklaces">For employers</a>
+              <a href="/employers">For employers</a>
             </li>
             <li>
-              <a href="/chains">Resources</a>
+              <a href="/resources">Resources</a>
             </li>
             <li>
-              <a href="/lipglosses">Support</a>
+              <a href="/support">Support</a>
             </li>
           </ul>
         </nav>
