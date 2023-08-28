@@ -7,6 +7,12 @@
   --tertiary-color: #090020;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -140,7 +146,7 @@ header .login-btn:hover {
 .showcase {
   height: 90vh;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .showcase-content {
@@ -155,6 +161,7 @@ header .login-btn:hover {
   font-weight: 600;
   line-height: 125%;
   margin-top: 2rem;
+  white-space: pre-wrap;
 }
 
 .showcase-content h6 {
@@ -164,6 +171,14 @@ header .login-btn:hover {
   font-style: normal;
   line-height: 150%;
   margin: 30px 0 30px 0;
+  white-space: pre-wrap;
+}
+
+.showcase svg {
+  position: absolute;
+  z-index: 3;
+  top: 11rem;
+  left: 40rem;
 }
 
 .candidates {
@@ -236,12 +251,6 @@ header .login-btn:hover {
   z-index: 7;
   display: inline;
   left: 56%;
-}
-
-.showcase-image {
-  position: relative;
-  overflow: hidden;
-  height: 90vh;
 }
 
 .jumbotron {
@@ -333,17 +342,17 @@ header .login-btn:hover {
 }
 
 .about-us .data h1 {
-  color: var(--tertiary-color);
+  color: rgba(2, 12, 24, 0.7);
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 25px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 125%;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .about-us .data h6 {
-  color: #000;
+  color: rgba(2, 12, 24, 0.7);
   text-align: center;
   font-family: "Nunito", sans-serif;
   font-size: 15px;
@@ -459,7 +468,6 @@ header .login-btn:hover {
 .services h2 {
   color: #000;
   font-family: "Open Sans", sans-serif;
-  font-size: 32px;
   font-style: normal;
   font-weight: 600;
   line-height: 125%;
@@ -495,9 +503,9 @@ header .login-btn:hover {
 }
 
 .service-item img {
-  background: #96b300;
+  background: rgba(150, 179, 0, 0.5);
   padding: 5px;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .service-item h4 {
@@ -549,6 +557,7 @@ header .login-btn:hover {
 
 .faq-item {
   padding: 20px;
+  margin-bottom: 1rem;
   width: 50rem;
   cursor: pointer;
 }
@@ -597,7 +606,7 @@ header .login-btn:hover {
 .faq-jumbo {
   background-color: var(--primary-color);
   padding: 3rem;
-  margin-bottom: 4rem;
+  margin: 6rem 0 5rem 0;
 }
 
 .faq-jumbo .content {

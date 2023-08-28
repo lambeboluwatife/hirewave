@@ -4,15 +4,21 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Showcase from "./components/Showcase";
-import Jumbotron from "./components/Jumbotron";
-import About from "./components/About";
-import FeaturedJobs from "./components/FeaturedJobs";
+import Showcase from "./components/Landing Page/Showcase";
+import Jumbotron from "./components/Landing Page/Jumbotron";
+import About from "./components/Landing Page/About";
+import FeaturedJobs from "./components//Landing Page/FeaturedJobs";
 import data from "./data/jobs";
 import faqsData from "./data/faq";
 import servicesData from "./data/services";
-import Services from "./components/Services";
-import FAQ from "./components/FAQ";
+import Services from "./components/Landing Page/Services";
+import FAQ from "./components/Landing Page/FAQ";
+import EmployersJumbotron from "./components/Employers Page/EmployersJumbotron";
+import cards from "./data/employersCard";
+import HiringExperience from "./components/Employers Page/HiringExperience";
+import EmployersCards from "./components/Employers Page/EmployersCards";
+import experienceData from "./data/hiringExperience";
+import Note from "./components/Employers Page/Note";
 
 const App = () => {
   const [jobs] = useState(data);
@@ -29,6 +35,25 @@ const App = () => {
     setSelected(i);
   };
 
+  const homeShowcase = {
+    title: "Your Partner in \nHiring Excellence",
+    text: "Need to discover top-tier talent for your business? \nLook no further. We bridge the gap between fresh \ntalent and thriving businesses.",
+    button: "Explore Jobs",
+    svg: true,
+  };
+
+  const employersShowcase = {
+    title: "Connecting Talent \nWith Opportunity",
+    text: "We’ve made hiring effortless with just few clicks! \nCheck it out!",
+    button: "Post A Job",
+    svg: false,
+  };
+
+  const faqContent = {
+    title: "Frequently Asked Questions",
+    text: "Here you can find solutions to all your queries.",
+  };
+
   return (
     <Router>
       <Header />
@@ -37,12 +62,29 @@ const App = () => {
           path="/"
           element={
             <>
-              <Showcase />
+              <Showcase showcase={homeShowcase} />
               <Jumbotron />
               <About />
               <Services services={services} />
               <FeaturedJobs jobs={jobs} />
-              <FAQ toggle={toggle} faqs={faqs} selected={selected} />
+              <FAQ
+                faqContent={faqContent}
+                toggle={toggle}
+                faqs={faqs}
+                selected={selected}
+              />
+            </>
+          }
+        />
+        <Route
+          path="/employers"
+          element={
+            <>
+              <Showcase showcase={employersShowcase} />
+              <EmployersJumbotron />
+              <EmployersCards cards={cards} />
+              <HiringExperience data={experienceData} />
+              <Note />
             </>
           }
         />

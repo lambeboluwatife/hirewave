@@ -1,10 +1,10 @@
-const FAQ = ({ faqs, toggle, selected }) => {
+const FAQ = ({ faqs, toggle, selected, faqContent }) => {
   return (
     <>
       <div className="faq">
         <div className="container">
-          <h1>Frequently Asked Questions</h1>
-          <h5>Here you can find solutions to all your queries.</h5>
+          <h1>{faqContent.title}</h1>
+          <h5>{faqContent.text}</h5>
           <div className="faqs">
             <div className="accordion">
               {faqs.map((faq, i) => (
