@@ -19,6 +19,7 @@ import HiringExperience from "./components/Employers Page/HiringExperience";
 import EmployersCards from "./components/Employers Page/EmployersCards";
 import experienceData from "./data/hiringExperience";
 import Note from "./components/Employers Page/Note";
+import PostJob from "./components/Employers Page/PostJob";
 
 const App = () => {
   const [jobs] = useState(data);
@@ -85,6 +86,7 @@ const App = () => {
               <EmployersCards cards={cards} />
               <HiringExperience data={experienceData} />
               <Note />
+              <PostJob />
             </>
           }
         />
