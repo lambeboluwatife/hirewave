@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Nunito:wght@300&family=Open+Sans:wght@800&display=swap");
 
+.jumbotron-wrapper {
+  position: relative;
+}
+
 .employers-jumbotron {
   height: 32vh;
+  position: relative;
+  z-index: 1;
+  width: 100%;
 }
 
 .employers-jumbotron h2 {
@@ -26,15 +33,19 @@
 }
 
 .employers-cards {
+  position: absolute;
   display: flex;
   justify-content: space-between;
+  z-index: 2;
+  top: 7rem;
+  left: 4rem;
 }
 
 .employers-card {
   border-radius: 10px;
   background: #fafafa;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
-  width: 360px;
+  width: 350px;
   margin: 2rem 1rem 1rem 1rem;
   text-align: center;
 }
@@ -107,7 +118,7 @@
 }
 
 .hiring-experience {
-  margin-top: 5rem;
+  margin-top: 35rem;
 }
 
 .hiring-experience h2 {
@@ -153,9 +164,33 @@
   padding-top: 1rem;
 }
 
-.experience-image img {
+.experience-image {
+  position: relative;
+}
+
+.experience-image .svg-box {
+  position: relative;
+  z-index: 1;
   width: 300px;
   height: 200px;
+  right: 2.2rem;
+}
+
+.experience-image img {
+  width: 280px;
+  height: 180px;
+  position: absolute;
+  z-index: 2;
+  right: 2.8rem;
+  top: 0.6rem;
+}
+
+.experience-image .svg-rectangle {
+  position: absolute;
+  z-index: 3;
+  width: 350px;
+  top: 12rem;
+  right: 12px;
 }
 
 .notes {

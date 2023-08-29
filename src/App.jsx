@@ -20,6 +20,7 @@ import EmployersCards from "./components/Employers Page/EmployersCards";
 import experienceData from "./data/hiringExperience";
 import Note from "./components/Employers Page/Note";
 import PostJob from "./components/Employers Page/PostJob";
+import homeImage from "/Rectangle 493.jpg";
 
 const App = () => {
   const [jobs] = useState(data);
@@ -41,6 +42,7 @@ const App = () => {
     text: "Need to discover top-tier talent for your business? \nLook no further. We bridge the gap between fresh \ntalent and thriving businesses.",
     button: "Explore Jobs",
     svg: true,
+    // image: homeImage,
   };
 
   const employersShowcase = {
@@ -82,8 +84,7 @@ const App = () => {
           element={
             <>
               <Showcase showcase={employersShowcase} />
-              <EmployersJumbotron />
-              <EmployersCards cards={cards} />
+              <EmployersJumbotron cards={cards} />
               <HiringExperience data={experienceData} />
               <Note />
               <PostJob />
