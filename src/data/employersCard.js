@@ -7,7 +7,6 @@ const cards = [
     plan: "Starter Essential",
     cost: "Free",
     duration: "",
-    paid: false,
     mark: mark,
     cancel: cancel,
     markFeatures: [
@@ -27,7 +26,6 @@ const cards = [
     plan: "Growth Partner",
     cost: "N15,000",
     duration: "/yearly",
-    paid: true,
     mark: mark,
     cancel: cancel,
     markFeatures: [
@@ -47,7 +45,6 @@ const cards = [
     plan: "Premium Connection",
     cost: "N35,000",
     duration: "/yearly",
-    paid: true,
     mark: mark,
     cancel: cancel,
     markFeatures: [
