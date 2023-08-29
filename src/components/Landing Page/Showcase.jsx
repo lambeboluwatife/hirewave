@@ -38,6 +38,9 @@ const Showcase = ({ showcase }) => {
           <div className="showcase-image"></div>
         </div>
       </div>
+      {/* <div className="image-box">
+        <img src={showcase.image} alt="" />
+      </div> */}
     </div>
   );
 };

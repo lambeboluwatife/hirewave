@@ -1,5 +1,3 @@
-import React from "react";
-
 const EmployersCards = ({ cards }) => {
   return (
     <div className="container">
