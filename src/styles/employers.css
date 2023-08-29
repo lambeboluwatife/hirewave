@@ -39,6 +39,7 @@
   z-index: 2;
   top: 7rem;
   left: 4rem;
+  right: 4rem;
 }
 
 .employers-card {
@@ -60,17 +61,13 @@
 }
 
 .employers-card h2 {
-  color: #020c18;
+  color: #4d73f8;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: -1.28px;
   display: inline;
-}
-
-.employers-card h2.paid {
-  color: #4d73f8;
 }
 
 .employers-card span {
