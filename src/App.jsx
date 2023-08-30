@@ -1,9 +1,16 @@
+
+import react from "react";
+=======
 import { useState } from "react";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
+import Resource from "./pages/Resource";
+
 import Showcase from "./components/Landing Page/Showcase";
 import Jumbotron from "./components/Landing Page/Jumbotron";
 import About from "./components/Landing Page/About";
@@ -60,6 +67,9 @@ const App = () => {
   return (
     <Router>
       <Header />
+
+      <Resource />
+
       <Routes>
         <Route
           path="/"
@@ -92,6 +102,7 @@ const App = () => {
           }
         />
       </Routes>
+
       <Footer />
     </Router>
   );
