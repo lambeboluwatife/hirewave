@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 700px;
-  /* z-index: 1; */
+  z-index: -1;
   gap: 79px;
 `;
 

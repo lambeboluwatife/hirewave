@@ -1,5 +1,4 @@
 import React from "react";
-import { PagContainer } from "../Pagination/pagination.style";
 import sketch from "../../asset/EcoSketch.png";
 import {
   BlogButton,
