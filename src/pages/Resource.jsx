@@ -4,7 +4,7 @@ import Course from "../components/course/Course";
 import Community from "../components/Community/Community";
 import Service from "../components/RService/Service";
 import Blog from "../components/blog/Blog";
-import Testimonial from "../components/Testimonial/Testimonial";
+import Testimonial from "../components/testimonial/Testimonial";
 import Courses from "../components/courses/Courses";
 
 const Resource = () => {
