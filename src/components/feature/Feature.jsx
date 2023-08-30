@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Active,
   Container,
   FeaturedContainer,
   FeaturedOptions,
@@ -97,6 +98,7 @@ const Feature = () => {
                     />
                   </svg>
                 </SVG>
+                <Active>Actively Recruiting</Active>
                 <RightDate>{job.date}</RightDate>
                 <RightLocation>{job.location}</RightLocation>
               </RightWrapper>

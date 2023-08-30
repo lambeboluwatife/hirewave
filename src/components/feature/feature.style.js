@@ -7,12 +7,21 @@ export const Container = styled.div`
   align-items: start;
   gap: 24px;
   margin: 48px 100px;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin: 0 30px;
+  }
 `;
 export const FilterContainer = styled.div`
   border-radius: 10px;
   padding: 24px 24px 63px;
   width: 100%;
   /* max-width: 397px; */
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const FeaturedContainer = styled.div`
@@ -70,7 +79,7 @@ export const FilterText = styled.input`
 `;
 
 export const SearchTitle = styled.h3`
-  color: #6d6d6d;
+  color: #020c18;
   margin: 25px 23px 22px;
   /* Heading/h3 */
   font-family: Open Sans;
@@ -78,6 +87,12 @@ export const SearchTitle = styled.h3`
   font-style: normal;
   font-weight: 600;
   line-height: 125%; /* 30px */
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 18px;
+    line-height: normal;
+  }
 `;
 export const SearchWrapper = styled.div`
   display: flex;
@@ -86,11 +101,18 @@ export const SearchWrapper = styled.div`
   row-gap: 24px;
   margin-left: 17px;
   margin-bottom: 70px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    margin: 0 0 80px;
+    row-gap: 12px;
+    column-gap: 6px;
+  }
 `;
 
 export const SearchLink = styled(Link)`
   border-radius: 10px;
-  border: 1px solid rgba(9, 0, 32, 0.7);
+  border: 1px solid #6d6d6d;
   padding: 10px 24px;
   color: #98aefa;
   /* Body/p1-reg */
@@ -99,6 +121,14 @@ export const SearchLink = styled(Link)`
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 27px */
+
+  @media screen and (max-width: 768px) {
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 6px 8px;
+  }
 `;
 
 export const FeaturedTitle = styled.h2`
@@ -117,13 +147,25 @@ export const FeaturedOptions = styled.div`
   margin-top: 24px;
   gap: 24px;
   margin-bottom: 55px;
+
+  @media screen and (max-width: 768px) {
+    gap: 12px;
+    margin-bottom: 75px;
+  }
 `;
 
 export const FeaturedWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
-  border: 0.5px solid rgba(9, 0, 32, 0.7);
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.07);
+
+  @media screen and (max-width: 768px) {
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    padding: 12px 8px;
+  }
 `;
 
 export const LogoWrapper = styled.div`
@@ -132,17 +174,31 @@ export const LogoWrapper = styled.div`
   margin-left: 37px;
   margin-top: 34px;
   gap: 31px;
+
+  @media screen and (max-width: 768px) {
+    /* display: none; */
+    margin: 0;
+  }
 `;
 
 export const LogoImg = styled.img`
   width: 80px;
   height: 80px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const TextWrapper = styled.div`
   display: grid;
   gap: 12px;
   margin-bottom: 36px;
+
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    gap: 5px;
+  }
 `;
 
 export const LogoTitle = styled.h4`
@@ -153,6 +209,11 @@ export const LogoTitle = styled.h4`
   font-style: normal;
   font-weight: 600;
   line-height: 125%; /* 22.5px */
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    line-height: normal;
+  }
 `;
 
 export const LogoParagraph = styled.p`
@@ -162,11 +223,20 @@ export const LogoParagraph = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 21px */
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    line-height: normal;
+  }
 `;
 
 export const LogoDesWrapper = styled.div`
   display: flex;
   gap: 12px;
+
+  @media screen {
+    gap: 6px;
+  }
 `;
 
 export const LogoDescripton = styled.p`
@@ -179,6 +249,12 @@ export const LogoDescripton = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 21px */
+
+  @media screen and (max-width: 768px) {
+    padding: 2px 6px;
+    font-size: 10px;
+    line-height: normal;
+  }
 `;
 
 export const RightWrapper = styled.div`
@@ -186,13 +262,38 @@ export const RightWrapper = styled.div`
   margin-right: 24px;
   justify-content: end;
   align-self: center;
+
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    gap: 9px;
+  }
 `;
 
 export const SVG = styled.p`
   width: 24px;
   height: 24px;
   margin-bottom: 15px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
+
+export const Active = styled.p`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    color: #020c18;
+    font-family: Nunito;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* align-self: flex-start; */
+  }
+`;
+
 export const RightDate = styled.p`
   color: rgba(9, 0, 32, 0.7);
   /* Body/p2-reg */
@@ -201,6 +302,11 @@ export const RightDate = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 21px */
+
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+    line-height: normal;
+  }
 `;
 
 export const RightLocation = styled.p`
@@ -211,4 +317,9 @@ export const RightLocation = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 21px */
+
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+    line-height: normal;
+  }
 `;

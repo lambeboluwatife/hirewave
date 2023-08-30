@@ -12,6 +12,8 @@ import {
   ImageBg,
   InputFieldWrapper,
   Label,
+  Media,
+  MediaInput,
 } from "./dream.style";
 
 const Dream = () => {
@@ -24,13 +26,23 @@ const Dream = () => {
         <DreamTitle>Find your dream job</DreamTitle>
         <FieldContainer>
           <InputFieldWrapper>
-            <Label>What</Label>
-            <FieldInput type="text" />
+            <div>
+              <Label>What</Label>
+            </div>
+            <FieldInput type="text" placeholder=" e.g “product designer”" />
+            <MediaInput
+              type="text"
+              placeholder=" What e.g “product designer”"
+            />
           </InputFieldWrapper>
-          <InputFieldWrapper>
-            <Label>Where</Label>
-            <FieldInput type="text" />
-          </InputFieldWrapper>
+          <Media>
+            <InputFieldWrapper>
+              <div>
+                <Label>Where</Label>
+              </div>
+              <FieldInput type="text" placeholder="e.g “lagos”" />
+            </InputFieldWrapper>
+          </Media>
           <ButtonWrapper>
             <FieldButton>Search</FieldButton>
           </ButtonWrapper>
