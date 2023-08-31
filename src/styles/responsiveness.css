@@ -177,11 +177,6 @@
     display: flex;
   }
 
-  .showcase-content h1 {
-    margin-top: 0;
-    font-size: 2.5rem;
-  }
-
   .grid,
   .showcase .grid {
     grid-template-columns: 1fr;
@@ -190,6 +185,7 @@
 
   .showcase-content h1 {
     font-size: 2rem;
+    margin-top: 0;
   }
 
   .showcase-content h6 {
@@ -426,6 +422,118 @@
 }
 
 /* Mobile */
+@media (max-width: 400px) {
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-content h1 {
+    margin-top: 1rem;
+  }
+
+  .services-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service-item {
+    padding: 1rem;
+    width: 15rem;
+  }
+
+  .service-item h4 {
+    padding: 0.5rem 0;
+    font-size: medium;
+  }
+
+  .service-item h6 {
+    font-size: small;
+  }
+
+  .featured-jobs {
+    text-align: center;
+  }
+
+  .featured-title h2 {
+    display: block;
+    font-size: larger;
+  }
+
+  .featured-title a {
+    display: none;
+  }
+
+  .featured-jobs .featured-btn {
+    display: block;
+  }
+
+  .item-container {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .item-container .item-logo {
+    display: none;
+  }
+
+  .item-container .item-details {
+    margin: 0;
+  }
+
+  .item-container .item-details h3 {
+    font-size: x-small;
+    font-weight: 700;
+    display: block;
+  }
+
+  .item-container .item-details h5 {
+    font-size: x-small;
+    padding: 0.2rem 0;
+    display: block;
+  }
+
+  .item-container .item-details span {
+    font-size: xx-small;
+    margin-right: 0.2rem;
+    float: left;
+  }
+
+  .item-container .item-details-2 h6 {
+    font-size: xx-small;
+    padding: 0;
+  }
+
+  .faq-item {
+    width: 19rem;
+  }
+
+  .faq-item h4 {
+    font-size: small;
+  }
+
+  .faq-item .content {
+    font-size: x-small;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-content h6,
+  .footer-links ul {
+    display: none;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-links h4,
+  .footer-links .socials {
+    padding-top: 1rem;
+  }
+}
+
+/* Mobile */
 @media (max-width: 320px) {
   .logo {
     font-size: 20px;
@@ -440,5 +548,74 @@
   .logo a {
     display: flex;
     justify-content: flex-start;
+  }
+
+  .showcase .candidates {
+    display: none;
+  }
+
+  .showcase-content button {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .jumbotron {
+    padding: 1rem;
+    height: 30vh;
+  }
+
+  .jumbotron-image .atica {
+    width: 120px;
+    padding: 0 0 0 5rem;
+  }
+
+  .jumbotron-image .amara {
+    width: 120px;
+    padding: 0 0.5rem 0 1rem;
+  }
+
+  .jumbotron-image .solaytic {
+    width: 180px;
+    padding-right: 5rem;
+  }
+
+  .jumbotron-image .aven {
+    left: 6rem;
+  }
+
+  .about-us,
+  .about-us h6 {
+    text-align: left;
+    margin: 0;
+  }
+
+  .about-us h6 {
+    padding-left: 0;
+  }
+
+  .about-us .data {
+    padding: 0 3rem;
+  }
+
+  .about-btn {
+    margin: 0;
+    display: inline;
+  }
+
+  .about-btn .btn {
+    margin-right: 1rem;
+    padding: 1rem;
+  }
+
+  .about-btn .btn2 {
+    padding: 1rem;
+  }
+
+  .services .service-detail {
+    font-size: small;
+  }
+
+  .faq-item {
+    width: 16rem;
   }
 }

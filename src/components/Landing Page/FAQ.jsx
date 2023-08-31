@@ -32,7 +32,7 @@ const FAQ = ({ faqs, toggle, selected, faqContent }) => {
       </div>
 
       <div className="faq-jumbo">
-        <div className="container">
+        <div className="">
           <div className="content">
             <h6>
               Hirewave - the <span>easiest way</span> to discover top-tier
