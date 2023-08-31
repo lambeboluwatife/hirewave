@@ -35,12 +35,9 @@ const Showcase = ({ showcase }) => {
               <h6>Candidates</h6>
             </div>
           </div>
-          <div className="showcase-image"></div>
         </div>
+        {/* <img src={showcase.image} alt="" className="showcase-img" /> */}
       </div>
-      {/* <div className="image-box">
-        <img src={showcase.image} alt="" />
-      </div> */}
     </div>
   );
 };

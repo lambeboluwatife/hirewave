@@ -4,10 +4,10 @@
   margin: 0;
 }
 
+html,
 body {
-  font-family: "Lato", sans-serif;
-  background-color: #fff;
-  color: #090020;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -22,7 +22,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   justify-content: center;
-  /* align-items: center; */
   height: 100%;
 }
 
