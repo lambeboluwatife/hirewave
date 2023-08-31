@@ -1,7 +1,7 @@
 const Services = ({ services }) => {
   return (
     <div className="services">
-      <div className="container">
+      <div className="">
         <h2>Our Services</h2>
         <h6 className="service-detail">
           Our tailored services connect you with top emerging talent, ensuring

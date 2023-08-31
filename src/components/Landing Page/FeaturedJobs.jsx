@@ -13,6 +13,11 @@ const FeaturedJobs = ({ jobs }) => {
             <Item key={job.id} job={job} />
           ))}
         </div>
+        <div className="featured-btn">
+          <a href="/jobs">
+            <button className="btn">View all jobs</button>
+          </a>
+        </div>
       </div>
     </div>
   );

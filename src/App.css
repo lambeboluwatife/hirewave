@@ -479,6 +479,18 @@ header .menu-bar {
   color: var(--tertiary-color);
 }
 
+.featured-jobs .featured-btn {
+  text-align: center;
+  display: none;
+}
+
+.featured-jobs .btn {
+  border: 1px solid #4d73f8;
+  color: #4d73f8;
+  background: transparent;
+  font-weight: 100;
+}
+
 .item-container {
   display: flex;
   align-items: center;
@@ -518,7 +530,7 @@ header .menu-bar {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  padding: 0.2rem 0 0.2rem 0;
+  padding: 0.2rem 0;
 }
 
 .item-container .item-details span {
