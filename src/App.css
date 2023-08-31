@@ -75,6 +75,7 @@ header .menu-bar {
   cursor: pointer;
   font-size: 25px;
   display: none;
+  color: #1b0065;
 }
 
 .btn {
@@ -330,6 +331,8 @@ header .menu-bar {
   z-index: 7;
   display: inline;
   left: 56%;
+  top: 26%;
+  margin-top: 0;
 }
 
 .jumbotron {
@@ -413,7 +416,7 @@ header .menu-bar {
 .business,
 .graduates {
   border-right: 1.5px solid #4d73f8;
-  padding: 0 3rem 0 3rem;
+  padding: 0 3rem;
 }
 
 .vacancies {
@@ -526,7 +529,7 @@ header .menu-bar {
   line-height: 150%;
   border-radius: 10px;
   background: rgba(150, 179, 0, 0.5);
-  padding: 1px 10px 1px 10px;
+  padding: 1px 10px;
 }
 
 .item-container .item-details-2 h6 {
