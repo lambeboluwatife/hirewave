@@ -1,4 +1,7 @@
-const Header = () => {
+import { faBars, faRemove } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const Header = ({ dropdown, toggleDropdown }) => {
   return (
     <>
       <header>
@@ -47,7 +50,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div>
+        <div className="header-btn">
           <a className="login-btn" href="/login">
             Log in
           </a>
@@ -55,14 +58,37 @@ const Header = () => {
             <button className="btn">Sign up</button>
           </a>
         </div>
-      </header>
-      {/* <svg className="lines" xmlns="http://www.w3.org/2000/svg" width="295" height="232" viewBox="0 0 295 232" fill="none">
-        <path
-          d="M107.283 220.713C78.5813 215.549 50.1719 204.424 30.0052 182.766C20.8959 172.983 13.7226 161.286 10.0172 148.426C6.65056 136.737 6.22389 124.502 7.57855 112.468C10.3839 87.5571 20.1906 63.9548 27.7386 40.2305C31.8852 27.2011 35.6119 13.6693 37.1199 -0.000289917H30.4705C30.2839 1.58646 30.0705 3.17055 29.8212 4.74405C25.8065 30.132 15.5265 54.0127 8.23187 78.5377C1.25987 101.978 -3.38412 127.284 3.90121 151.243C11.9332 177.658 32.7332 198.633 56.9519 211.207C84.8919 225.71 116.981 230.371 148.145 231.339C182.523 232.406 216.789 228.705 251.053 226.557C265.639 225.644 280.556 225.074 295.495 225.298V218.511C232.763 217.62 169.689 231.938 107.283 220.713Z"
-          fill="#3406B3"
-          fill-opacity="0.18"
+        <FontAwesomeIcon
+          icon={dropdown ? faRemove : faBars}
+          className="menu-bar"
+          onClick={toggleDropdown}
         />
-      </svg> */}
+      </header>
+
+      {dropdown && (
+        <div className="dropdown-menu">
+          <ul className="nav-links">
+            <li>
+              <a href="/jobs">Jobs</a>
+            </li>
+            <li>
+              <a href="/employers">For employers</a>
+            </li>
+            <li>
+              <a href="/resources">Resources</a>
+            </li>
+            <li>
+              <a href="/support">Support</a>
+            </li>
+          </ul>
+          <a className="cta2" href="/login">
+            <button>Log in</button>
+          </a>
+          <a href="/" className="cta">
+            <button>Sign up</button>
+          </a>
+        </div>
+      )}
     </>
   );
 };

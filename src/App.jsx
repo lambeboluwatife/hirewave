@@ -28,6 +28,11 @@ const App = () => {
   const [faqs] = useState(faqsData);
 
   const [selected, setSelected] = useState(null);
+  const [dropdown, setDropdown] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdown(!dropdown);
+  };
 
   const toggle = (i) => {
     if (selected === i) {
@@ -42,7 +47,7 @@ const App = () => {
     text: "Need to discover top-tier talent for your business? \nLook no further. We bridge the gap between fresh \ntalent and thriving businesses.",
     button: "Explore Jobs",
     svg: true,
-    // image: homeImage,
+    image: homeImage,
   };
 
   const employersShowcase = {
@@ -50,6 +55,7 @@ const App = () => {
     text: "We’ve made hiring effortless with just few clicks! \nCheck it out!",
     button: "Post A Job",
     svg: false,
+    image: homeImage,
   };
 
   const faqContent = {
@@ -59,7 +65,7 @@ const App = () => {
 
   return (
     <Router>
-      <Header />
+      <Header dropdown={dropdown} toggleDropdown={toggleDropdown} />
       <Routes>
         <Route
           path="/"
