@@ -194,7 +194,6 @@
   height: 50vh;
   background: #fafafa;
   margin: 4rem 0 5rem 0;
-  /* padding: 3rem; */
 }
 
 .note {
@@ -240,7 +239,7 @@
 
 .story {
   margin-left: 5rem;
-  padding: 3rem 0 3rem 0;
+  padding: 3rem 0;
 }
 
 .story svg {
@@ -376,4 +375,22 @@ textarea {
 
 form button {
   margin-top: 1rem;
+}
+
+.post-job-notice {
+  background: #4d73f8;
+  height: 10vh;
+  padding: 1rem;
+  margin: 2rem 0;
+  display: none;
+}
+
+.post-job-notice h2 {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
 }

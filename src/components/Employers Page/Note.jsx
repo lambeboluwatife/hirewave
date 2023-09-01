@@ -9,11 +9,14 @@ const Note = () => {
               alt="author"
               className="author-image"
             />
-            <h3>Seun Thomas</h3>
-            <h6>
-              Hiring manager at <br />
-              FastHub Tech
-            </h6>
+            <div>
+              {" "}
+              <h3>Seun Thomas</h3>
+              <h6>
+                Hiring manager at <br />
+                FastHub Tech
+              </h6>
+            </div>
           </div>
           <div className="divider"></div>
           <div className="story">
@@ -81,16 +84,15 @@ const Note = () => {
             <h3>FastHub Tech is a fast-rising tech startup in Nigeria.</h3>
             <h6>
               Working with Hirewave has been a game-changer for our recruitment
-              process at Fasthub Tech. The platform's intuitive <br />
-              interface and efficient job posting capabilities have streamlined
-              our hiring efforts, allowing us to quickly connect with top-{" "}
-              <br />
-              tier talent. The seamless application process has greatly improved
-              candidate engagement, and the personalized approach <br />
-              to communication sets HireWave apart in the competitive hiring
-              landscape. Thanks to HireWave, we've found exceptional <br />
-              candidates that perfectly fit our company's needs, making it an
-              indispensable tool for our recruitment success.
+              process at Fasthub Tech. The platform's intuitive interface and
+              efficient job posting capabilities have streamlined our hiring
+              efforts, allowing us to quickly connect with top- tier talent. The
+              seamless application process has greatly improved candidate
+              engagement, and the personalized approach to communication sets
+              HireWave apart in the competitive hiring landscape. Thanks to
+              HireWave, we've found exceptional candidates that perfectly fit
+              our company's needs, making it an indispensable tool for our
+              recruitment success.
             </h6>
             <a href="/stories">
               <strong>See more success stories</strong>
