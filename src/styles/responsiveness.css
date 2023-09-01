@@ -431,6 +431,51 @@
     margin-top: 1rem;
   }
 
+  .showcase .candidates {
+    display: none;
+  }
+
+  .jumbotron {
+    margin-top: 5rem;
+  }
+
+  .about-us,
+  .about-us h6 {
+    text-align: left;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .about-us h6 {
+    padding-left: 0;
+  }
+
+  .about-us .data {
+    padding: 0 3rem;
+    text-align: left;
+    margin: 20px 3.5rem 30px 0;
+  }
+
+  .business,
+  .graduates {
+    text-align: left;
+    float: left;
+  }
+
+  .about-btn {
+    margin: 0;
+    display: inline;
+  }
+
+  .about-btn .btn {
+    margin-right: 1rem;
+    padding: 1rem;
+  }
+
+  .about-btn .btn2 {
+    padding: 1rem;
+  }
+
   .services-content {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -510,7 +555,7 @@
   }
 
   .faq-item .content {
-    font-size: x-small;
+    font-size: small;
   }
 
   footer {
@@ -550,10 +595,6 @@
     justify-content: flex-start;
   }
 
-  .showcase .candidates {
-    display: none;
-  }
-
   .showcase-content button {
     margin-top: 0;
     margin-bottom: 2rem;
@@ -581,34 +622,6 @@
 
   .jumbotron-image .aven {
     left: 6rem;
-  }
-
-  .about-us,
-  .about-us h6 {
-    text-align: left;
-    margin: 0;
-  }
-
-  .about-us h6 {
-    padding-left: 0;
-  }
-
-  .about-us .data {
-    padding: 0 3rem;
-  }
-
-  .about-btn {
-    margin: 0;
-    display: inline;
-  }
-
-  .about-btn .btn {
-    margin-right: 1rem;
-    padding: 1rem;
-  }
-
-  .about-btn .btn2 {
-    padding: 1rem;
   }
 
   .services .service-detail {
