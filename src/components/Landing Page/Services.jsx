@@ -9,14 +9,16 @@ const Services = ({ services }) => {
           build a thriving workplace that shapes <br /> the future of your
           business.
         </h6>
-        <div className="services-content">
-          {services.map((service) => (
-            <div className="service-item" key={service.id}>
-              <img src={service.image} alt={service.title} />
-              <h4>{service.title}</h4>
-              <h6>{service.description}</h6>
-            </div>
-          ))}
+        <div className="container">
+          <div className="services-content">
+            {services.map((service) => (
+              <div className="service-item" key={service.id}>
+                <img src={service.image} alt={service.title} />
+                <h4>{service.title}</h4>
+                <h6>{service.description}</h6>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
