@@ -1,5 +1,5 @@
 /* Tablets and under */
-@media (max-width: 768px) {
+@media all and (max-width: 768px) {
   .employers-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -59,7 +59,7 @@
 }
 
 /* Mobile */
-@media (max-width: 500px) {
+@media all and (max-width: 500px) {
   .employers-jumbotron {
     height: 35vh;
     position: static;
@@ -151,7 +151,7 @@
 }
 
 /* Mobile */
-@media (max-width: 500px) {
+@media all and (max-width: 320px) {
   .employers-jumbotron {
     height: 40vh;
   }
