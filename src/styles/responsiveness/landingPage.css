@@ -624,11 +624,28 @@
     left: 6rem;
   }
 
+  .about-us .data {
+    padding-left: 6rem;
+  }
+
+  .service-item {
+    width: 12rem;
+    height: 13rem;
+  }
+
+  .service-item h4 {
+    font-size: small;
+  }
+
+  .service-item h6 {
+    font-size: 11px;
+  }
+
   .services .service-detail {
     font-size: small;
   }
 
   .faq-item {
-    width: 16rem;
+    width: 14rem;
   }
 }
