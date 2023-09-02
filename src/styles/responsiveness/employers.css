@@ -70,9 +70,21 @@
     font-size: large;
   }
 
+  .employers-card {
+    width: 300px;
+  }
+
   .employers-cards {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 5rem;
+  }
+
+  .employers-card h3 {
+    padding: 1rem 0;
+  }
+
+  .employers-card .btn {
+    margin: 1rem 0;
   }
 
   .employers-card:last-child {
