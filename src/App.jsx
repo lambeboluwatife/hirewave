@@ -21,6 +21,7 @@ import experienceData from "./data/hiringExperience";
 import Note from "./components/Employers Page/Note";
 import PostJob from "./components/Employers Page/PostJob";
 import homeImage from "/Rectangle 493.jpg";
+import employersImage from "/Rectangle 505.jpg";
 
 const App = () => {
   const [jobs] = useState(data);
@@ -55,7 +56,7 @@ const App = () => {
     text: "We’ve made hiring effortless with just few clicks! \nCheck it out!",
     button: "Post A Job",
     svg: false,
-    image: homeImage,
+    image: employersImage,
   };
 
   const faqContent = {

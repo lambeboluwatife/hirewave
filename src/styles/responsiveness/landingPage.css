@@ -28,6 +28,20 @@
     display: none;
   }
 
+  .showcase {
+    height: 80vh;
+  }
+
+  .showcase-img {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    left: 14.3rem;
+    height: 100vh;
+    width: 70vh;
+    bottom: 1px;
+  }
+
   .showcase svg {
     display: none;
   }
@@ -51,33 +65,34 @@
   }
 
   .candidates .ellipse-2 {
-    left: 13%;
+    left: 6%;
   }
 
   .candidates .ellipse-3 {
-    left: 24%;
+    left: 12%;
   }
 
   .candidates .ellipse-4 {
-    left: 35%;
+    left: 18%;
   }
 
   .candidates .ellipse-5 {
-    left: 47%;
+    left: 24%;
   }
 
   .candidates .ellipse-6 {
-    left: 58%;
+    left: 29%;
   }
 
   .candidates h5 {
-    left: 62%;
+    left: 31%;
     top: 25%;
   }
 
   .candidates h6 {
-    left: 78%;
+    left: 39%;
     margin-top: 0;
+    color: #fff;
   }
 
   .jumbotron {
@@ -115,6 +130,10 @@
     width: 140px;
     height: 30px;
     padding: 0 1rem;
+  }
+
+  .about-us .data {
+    margin: 40px 10rem 60px 10rem;
   }
 
   .services-content {
@@ -197,6 +216,10 @@
     margin-top: 2rem;
   }
 
+  .showcase-img {
+    display: none;
+  }
+
   .candidates img {
     width: 40px;
     height: 40px;
@@ -233,6 +256,7 @@
     top: 25%;
     font-size: 15px;
     margin-top: 0;
+    color: #090020;
   }
 
   .jumbotron {
@@ -439,8 +463,10 @@
     display: none;
   }
 
-  .jumbotron {
-    margin-top: 5rem;
+  .mobile-img {
+    display: block;
+    height: 50vh;
+    margin: 3rem 0;
   }
 
   .about-us,
@@ -482,11 +508,16 @@
 
   .services-content {
     grid-template-columns: repeat(1, 1fr);
+    align-items: center;
   }
 
   .service-item {
     padding: 1rem;
     width: 15rem;
+  }
+
+  .services .container {
+    padding: 40px;
   }
 
   .service-item h4 {

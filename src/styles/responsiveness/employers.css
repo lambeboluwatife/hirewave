@@ -92,11 +92,12 @@
   }
 
   .hiring-experience {
-    margin-top: 105rem;
+    margin-top: 95rem;
   }
 
   .experience-data {
     grid-template-columns: repeat(1, 1fr);
+    flex-direction: row-reverse;
   }
 
   .experience-image {
