@@ -2,8 +2,7 @@
 
 :root {
   --primary-color: #4d73f8;
-  --secondary-color: #fff; /* --primary-color: #ffa500; */
-  /* --secondary-color: #1b0065; */
+  --secondary-color: #fff;
   --tertiary-color: #090020;
 }
 
@@ -182,24 +181,8 @@ header .menu-bar {
   background-color: var(--primary-color);
 }
 
-.box {
-  height: 100vh;
-  position: relative;
-  bottom: 42.4rem;
-  float: right;
-  z-index: 1;
-}
-
-.backdrop-image {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
 .showcase {
   height: 90vh;
-  position: relative;
-  /* z-index: 1; */
 }
 
 .showcase-content {
@@ -234,32 +217,22 @@ header .menu-bar {
 .showcase svg {
   position: absolute;
   z-index: 3;
-  top: 11rem;
-  left: 40rem;
+  top: 15rem;
+  left: 42rem;
 }
 
 .showcase-img {
   display: flex;
-  width: 50%;
-  height: 100%;
+  position: absolute;
   z-index: -1;
-  justify-self: end;
-  top: 50rem;
-}
-
-/* .image-box {
+  left: 49rem;
   height: 100vh;
-  position: relative;
-  overflow: hidden;
-  bottom: 20rem;
-  left: 24rem;
+  bottom: 1px;
 }
 
-.image-box img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-} */
+.mobile-img {
+  display: none;
+}
 
 .candidates {
   margin: 80px 0 80px 0;
@@ -279,31 +252,31 @@ header .menu-bar {
 .candidates .ellipse-2 {
   position: absolute;
   z-index: 2;
-  left: 9%;
+  left: 4%;
 }
 
 .candidates .ellipse-3 {
   position: absolute;
   z-index: 3;
-  left: 17%;
+  left: 8%;
 }
 
 .candidates .ellipse-4 {
   position: absolute;
   z-index: 4;
-  left: 25%;
+  left: 12%;
 }
 
 .candidates .ellipse-5 {
   position: absolute;
   z-index: 5;
-  left: 34%;
+  left: 16%;
 }
 
 .candidates .ellipse-6 {
   position: absolute;
   z-index: 6;
-  left: 43%;
+  left: 20%;
 }
 
 .candidates h5 {
@@ -316,7 +289,7 @@ header .menu-bar {
   line-height: 125%;
   z-index: 7;
   display: inline;
-  left: 46%;
+  left: 21.3%;
   top: 25%;
 }
 
@@ -330,7 +303,7 @@ header .menu-bar {
   line-height: 125%;
   z-index: 7;
   display: inline;
-  left: 56%;
+  left: 27%;
   top: 26%;
   margin-top: 0;
 }
