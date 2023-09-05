@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const FAQ = ({ faqs, toggle, selected, faqContent }) => {
   return (
     <>
@@ -43,9 +45,9 @@ const FAQ = ({ faqs, toggle, selected, faqContent }) => {
               </span>
               . Find the <span>perfect match</span> for your hiring needs.{" "}
             </h6>
-            <a href="/jobs">
+            <Link to="/jobs">
               <button className="btn3">Post A Job</button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

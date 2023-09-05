@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <div className="about-us">
@@ -30,12 +32,12 @@ const About = () => {
           </div>
         </div>
         <div className="about-btn">
-          <a href="/employers">
+          <Link to="#services">
             <button className="btn">Learn more</button>
-          </a>
-          <a href="/employers">
+          </Link>
+          <Link to="/post-job">
             <button className="btn2">Post A Job</button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

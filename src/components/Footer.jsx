@@ -1,4 +1,13 @@
+import { Link, useLocation } from "react-router-dom";
+
 const Footer = () => {
+  const location = useLocation();
+  const hideHeaderForPaths = ["/sign-in", "/sign-up"];
+
+  if (hideHeaderForPaths.includes(location.pathname)) {
+    return <></>;
+  }
+
   return (
     <footer>
       <div className="container">
@@ -20,24 +29,24 @@ const Footer = () => {
               <h4>Resources</h4>
               <ul>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <h6>Blog</h6>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <h6>CV Writing & Review</h6>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <h6>Career Advice</h6>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <h6>Upskilling</h6>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -45,9 +54,9 @@ const Footer = () => {
               <h4>Privacy Policy</h4>
               <ul>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <h6>Terms & Conditions</h6>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -55,13 +64,13 @@ const Footer = () => {
               <h4>Support</h4>
               <ul>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <h6>Contact Us</h6>
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="socials">
-                <a href="#">
+                <Link to="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -74,9 +83,9 @@ const Footer = () => {
                       fill="white"
                     />
                   </svg>
-                </a>
+                </Link>
 
-                <a href="#">
+                <Link to="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -84,7 +93,7 @@ const Footer = () => {
                     viewBox="0 0 16 16"
                     fill="none"
                   >
-                    <g clip-path="url(#clip0_547_563)">
+                    <g clipPath="url(#clip0_547_563)">
                       <path
                         d="M10.1212 5.87868C11.2928 7.05025 11.2928 8.94975 10.1212 10.1213C8.94963 11.2929 7.05013 11.2929 5.87856 10.1213C4.70699 8.94975 4.70699 7.05025 5.87856 5.87868C7.05013 4.70711 8.94963 4.70711 10.1212 5.87868Z"
                         fill="white"
@@ -100,9 +109,9 @@ const Footer = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                </a>
+                </Link>
 
-                <a href="#">
+                <Link to="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -115,7 +124,7 @@ const Footer = () => {
                       fill="white"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
