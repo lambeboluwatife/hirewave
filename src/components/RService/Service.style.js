@@ -4,6 +4,16 @@ export const ServiceContainer = styled.div`
   background: rgba(234, 246, 255, 0.53);
   text-align: center;
   padding: 82px 100px;
+
+  @media screen and (max-width: 1280px) {
+    padding: 40px 50px;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    padding: 14px 30px 37px;
+  }
 `;
 export const Title = styled.h3`
   color: #090020;
@@ -13,22 +23,44 @@ export const Title = styled.h3`
   font-style: normal;
   font-weight: 600;
   line-height: 125%; /* 30px */
+
+  @media screen and (max-width: 1024px) {
+    line-height: normal;
+  }
 `;
 
 export const ServiceBox = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: start;
-  gap: 8px;
+  gap: 44px;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "image";
+  }
 `;
+
 export const ServiceImg = styled.img`
   width: 100%;
   max-width: 503px;
+
+  @media screen and (max-width: 600px) {
+    grid-area: image;
+
+    margin: 0 auto;
+  }
 `;
 
 export const ServiceTextWrapper = styled.div`
   text-align: left;
+
+  @media screen and (max-width: 600px) {
+    grid-area: header;
+  }
 `;
 
 export const CardTitle = styled.h5`
@@ -40,12 +72,20 @@ export const CardTitle = styled.h5`
   font-weight: 600;
   line-height: normal;
   margin-bottom: 24px;
+
+  @media screen and (max-width: 1024px) {
+    line-height: normal;
+  }
 `;
 
 export const CardMenu = styled.ul`
   list-style-type: disc;
   margin-left: 24px;
   margin-bottom: 48px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 24px;
+  }
 `;
 
 export const CardList = styled.li`
@@ -54,6 +94,13 @@ export const CardList = styled.li`
   font-size: 20px;
   font-weight: 400;
   line-height: 150%; /* 30px */
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
 `;
 
 export const CardButton = styled.button`
@@ -75,5 +122,10 @@ export const CardButton = styled.button`
     color: #4d73f8;
     border: 1px solid #4d73f8;
     background-color: #fff;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    padding: 6px 12px;
   }
 `;

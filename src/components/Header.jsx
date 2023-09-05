@@ -1,14 +1,10 @@
-
 import React from "react";
-
-=======
 
 const Header = () => {
   return (
     <>
       <header>
         <h3 className="logo">
-
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="37"
@@ -34,7 +30,6 @@ const Header = () => {
             />
           </svg>
           HIREWAVE
-
           <a href="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +57,6 @@ const Header = () => {
             </svg>
             HIREWAVE
           </a>
-
         </h3>
         <nav>
           <ul className="nav-links">

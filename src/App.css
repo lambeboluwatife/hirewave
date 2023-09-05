@@ -19,6 +19,7 @@ header {
   align-items: center;
   padding: 15px 10%;
   height: 10vh;
+  z-index: 999px;
 }
 
 .logo {

@@ -6,6 +6,11 @@ export const CourseContainer = styled.div`
   background: #7291ff;
   padding: 35px 0;
   margin-top: -50px;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 0;
+    padding: 12px 44px;
+  }
 `;
 
 export const CoursePara = styled.p`
@@ -17,4 +22,9 @@ export const CoursePara = styled.p`
   font-style: normal;
   font-weight: 600;
   line-height: 125%; /* 35px */
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    max-width: 310px;
+  }
 `;

@@ -3,6 +3,13 @@ import styled from "styled-components";
 export const TesContainer = styled.div`
   display: block;
   text-align: center;
+
+  @media screen and (max-width: 1280px) {
+    margin: 75px 50px;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 75px 30px;
+  }
 `;
 
 export const Heading = styled.h2`
@@ -16,6 +23,10 @@ export const Heading = styled.h2`
   font-weight: 600;
   line-height: normal;
   letter-spacing: -1.28px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+  }
 `;
 
 export const TesCard = styled.div`
@@ -30,12 +41,50 @@ export const TesCard = styled.div`
   justify-content: start;
   align-items: center;
   gap: 44px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 30px 24px;
+    max-width: 600px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 30px 24px;
+    max-width: 500px;
+  }
+
+  @media screen and (max-width: 680px) {
+    display: none;
+  }
+`;
+
+export const MobCard = styled.div`
+  display: none;
+  margin: 40px auto;
+  @media screen and (max-width: 680px) {
+    display: grid;
+    gap: 15px;
+    padding: 30px 24px;
+    max-width: 400px;
+    justify-content: start;
+    border-radius: 5px;
+    border: 0.5px solid rgba(2, 12, 24, 0.7);
+    background: #fff;
+  }
+`;
+
+export const CardHead = styled.div`
+  display: flex;
+  gap: 12px;
 `;
 
 export const CardImg = styled.img`
   display: flex;
   max-width: 238px;
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    max-width: 101px;
+  }
 `;
 
 export const CardTextWrapper = styled.div`
@@ -51,6 +100,14 @@ export const CardName = styled.h3`
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 680px) {
+    margin-top: 12px;
+  }
 `;
 
 export const CardTitle = styled.h5`
@@ -62,6 +119,10 @@ export const CardTitle = styled.h5`
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 export const CardDescription = styled.div`
@@ -71,6 +132,10 @@ export const CardDescription = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 27px */
+
+  @media screen and (max-width: 680px) {
+    text-align: left;
+  }
 `;
 
 export const Bubble = styled.img`
@@ -81,4 +146,8 @@ export const Bubble = styled.img`
   align-self: start;
   width: 100%;
   /* display: block; */
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;

@@ -142,6 +142,20 @@ export const FeaturedTitle = styled.h2`
   letter-spacing: -1.28px;
 `;
 
+export const MoView = styled.p`
+  display: none;
+  color: #4d73f8;
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+`;
+
 export const FeaturedOptions = styled.div`
   display: grid;
   margin-top: 24px;

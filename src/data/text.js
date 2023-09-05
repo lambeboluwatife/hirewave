@@ -84,12 +84,15 @@ export const blogOption = [
     description:
       "Begin by critically evaluating your current career status, strengths, weaknesses and aspirations. Establish clear....",
     img: goal,
+    mobDescription:
+      "Begin by critically evaluating your current career status...",
   },
   {
     title: "Mentorship & Collaboration",
     description:
       "Seek guidance from experienced mentors or colleagues. Collaborative effort can yield fresh perspectives and....",
     img: convers,
+    mobDescription: "Seek guidance from experienced mentors or colleagues....",
   },
   {
     title: "Strategic Planning",

@@ -1,7 +1,4 @@
-
-import react from "react";
-=======
-import { useState } from "react";
+import react, { useState } from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -10,6 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Resource from "./pages/Resource";
+import Jobs from "./pages/Jobs";
 
 import Showcase from "./components/Landing Page/Showcase";
 import Jumbotron from "./components/Landing Page/Jumbotron";
@@ -68,9 +66,10 @@ const App = () => {
     <Router>
       <Header />
 
+      {/* <Jobs /> */}
       <Resource />
 
-      <Routes>
+      {/* <Routes>
         <Route
           path="/"
           element={
@@ -101,7 +100,7 @@ const App = () => {
             </>
           }
         />
-      </Routes>
+      </Routes> */}
 
       <Footer />
     </Router>

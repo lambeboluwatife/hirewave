@@ -18,6 +18,7 @@ import {
   LogoParagraph,
   LogoTitle,
   LogoWrapper,
+  MoView,
   RightDate,
   RightLocation,
   RightWrapper,
@@ -67,7 +68,10 @@ const Feature = () => {
             </SearchLink>
           ))}
         </SearchWrapper>
-        <FeaturedTitle>Featured Jobs</FeaturedTitle>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <FeaturedTitle>Featured Jobs</FeaturedTitle>
+          <MoView>View All</MoView>
+        </div>
         <FeaturedOptions>
           {jobsOptions.map((job, index) => (
             <FeaturedWrapper key={index}>
