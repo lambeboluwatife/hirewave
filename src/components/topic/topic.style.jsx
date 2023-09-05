@@ -29,11 +29,19 @@ export const Box = styled.div`
   column-gap: 24px;
   row-gap: 40px;
 
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   @media screen and (max-width: 768px) {
     margin: 24px 26px 75px;
     grid-template-columns: 1fr 1fr;
     column-gap: 6px;
     row-gap: 12px;
+  }
+
+  @media screen and (max-width: 550px) {
+    grid-template-columns: 1fr;
   }
 `;
 
