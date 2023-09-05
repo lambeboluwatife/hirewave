@@ -66,8 +66,8 @@ const App = () => {
     <Router>
       <Header />
 
-      {/* <Jobs /> */}
-      <Resource />
+      <Jobs />
+      {/* <Resource /> */}
 
       {/* <Routes>
         <Route

@@ -8,6 +8,16 @@ export const Container = styled.div`
   gap: 24px;
   margin: 48px 100px;
 
+  @media screen and (max-width: 1200px) {
+    /* margin: 48px 50px; */
+    grid-template-columns: 0.5fr 2.5fr;
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+    margin: 48px 100px;
+  }
+
   @media screen and (max-width: 768px) {
     display: block;
     margin: 0 30px;
@@ -17,9 +27,15 @@ export const FilterContainer = styled.div`
   border-radius: 10px;
   padding: 24px 24px 63px;
   width: 100%;
+  box-sizing: border-box;
   /* max-width: 397px; */
+  border: 0.5px solid rgba(109, 109, 109, 0.35);
+  box-shadow: 0px 4px 4px 0px rgba(109, 109, 109, 0.09);
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
+  }
+
+  @media screen and (max-width: 1024px) {
     display: none;
   }
 `;
@@ -42,14 +58,16 @@ export const FilterSpan = styled.span`
 
 export const FilterForm = styled.div`
   max-width: 331px;
+
   width: 100%;
   display: grid;
   gap: 24px;
 `;
 export const FilterSelect = styled.select`
+  box-sizing: border-box;
   /* width: 331px; */
-  height: 57px;
   /* flex-shrink: 0; */
+  max-width: 320px;
   border: 0;
   color: #6d6d6d;
   background-color: #f6fbff;
@@ -66,6 +84,7 @@ export const FilterSelect = styled.select`
 export const FilterText = styled.input`
   height: 57px;
   /* flex-shrink: 0; */
+  max-width: 320px;
   background-color: #f6fbff;
   border-radius: 10px;
   padding: 15px 20px;
@@ -101,6 +120,12 @@ export const SearchWrapper = styled.div`
   row-gap: 24px;
   margin-left: 17px;
   margin-bottom: 70px;
+
+  @media screen and (max-width: 1024px) {
+    column-gap: 12px;
+    row-gap: 24px;
+    justify-content: center;
+  }
 
   @media screen and (max-width: 768px) {
     justify-content: center;
@@ -335,5 +360,15 @@ export const RightLocation = styled.p`
   @media screen and (max-width: 768px) {
     font-size: 10px;
     line-height: normal;
+  }
+`;
+
+export const Wrapper = styled.div`
+  margin: 40px auto 80px;
+  justify-content: center;
+  display: grid;
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
