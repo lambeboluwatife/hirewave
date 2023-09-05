@@ -115,7 +115,7 @@ header .menu-bar {
 }
 
 .btn:hover {
-  background-color: var(--secondary-color);
+  background: transparent;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Showcase = ({ showcase }) => {
   return (
     <div className="showcase">
@@ -22,9 +24,9 @@ const Showcase = ({ showcase }) => {
         <div className="showcase-content">
           <h1>{showcase.title}</h1>
           <h6>{showcase.text}</h6>
-          <a href="/jobs">
+          <Link to={showcase.link}>
             <button className="btn btn-explore">{showcase.button}</button>
-          </a>
+          </Link>
           <div className="candidates">
             <img className="ellipse-1" src="/Ellipse 207.svg" alt="" />
             <img className="ellipse-2" src="/Ellipse 208.svg" alt="" />

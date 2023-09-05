@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Item from "./Item";
 
 const FeaturedJobs = ({ jobs }) => {
@@ -6,7 +8,7 @@ const FeaturedJobs = ({ jobs }) => {
       <div className="container">
         <div className="featured-title">
           <h2>Explore Featured Jobs</h2>
-          <a href="/jobs">View All</a>
+          <Link to="/jobs">View All</Link>
         </div>
         <div className="featured-items">
           {jobs.map((job) => (
@@ -14,9 +16,9 @@ const FeaturedJobs = ({ jobs }) => {
           ))}
         </div>
         <div className="featured-btn">
-          <a href="/jobs">
+          <Link to="/jobs">
             <button className="btn">View all jobs</button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

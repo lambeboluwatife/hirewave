@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Note = () => {
   return (
     <div className="notes">
@@ -94,9 +96,9 @@ const Note = () => {
               our company's needs, making it an indispensable tool for our
               recruitment success.
             </h6>
-            <a href="/stories">
+            <Link to="/stories">
               <strong>See more success stories</strong>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

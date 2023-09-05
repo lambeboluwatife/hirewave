@@ -22,6 +22,8 @@ import Note from "./components/Employers Page/Note";
 import PostJob from "./components/Employers Page/PostJob";
 import homeImage from "/Rectangle 493.jpg";
 import employersImage from "/Rectangle 505.jpg";
+import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
 
 const App = () => {
   const [jobs] = useState(data);
@@ -49,6 +51,7 @@ const App = () => {
     button: "Explore Jobs",
     svg: true,
     image: homeImage,
+    link: "/jobs",
   };
 
   const employersShowcase = {
@@ -57,6 +60,7 @@ const App = () => {
     button: "Post A Job",
     svg: false,
     image: employersImage,
+    link: "/post-jobs",
   };
 
   const faqContent = {
@@ -98,6 +102,8 @@ const App = () => {
             </>
           }
         />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
       </Routes>
       <Footer />
     </Router>

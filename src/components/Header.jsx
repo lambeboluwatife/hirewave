@@ -1,12 +1,20 @@
 import { faBars, faRemove } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = ({ dropdown, toggleDropdown }) => {
+  const location = useLocation();
+  const hideHeaderForPaths = ["/sign-in", "/sign-up"];
+
+  if (hideHeaderForPaths.includes(location.pathname)) {
+    return <></>;
+  }
+
   return (
     <>
       <header>
         <h3 className="logo">
-          <a href="/">
+          <Link to="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="37"
@@ -32,31 +40,31 @@ const Header = ({ dropdown, toggleDropdown }) => {
               />
             </svg>
             HIREWAVE
-          </a>
+          </Link>
         </h3>
         <nav>
           <ul className="nav-links">
             <li>
-              <a href="/jobs">Jobs</a>
+              <Link to="/jobs">Jobs</Link>
             </li>
             <li>
-              <a href="/employers">For employers</a>
+              <Link to="/employers">For employers</Link>
             </li>
             <li>
-              <a href="/resources">Resources</a>
+              <Link to="/resources">Resources</Link>
             </li>
             <li>
-              <a href="/support">Support</a>
+              <Link to="/support">Support</Link>
             </li>
           </ul>
         </nav>
         <div className="header-btn">
-          <a className="login-btn" href="/login">
+          <Link className="login-btn" to="/sign-in">
             Log in
-          </a>
-          <a href="/signup">
+          </Link>
+          <Link to="/sign-up">
             <button className="btn">Sign up</button>
-          </a>
+          </Link>
         </div>
         <FontAwesomeIcon
           icon={dropdown ? faRemove : faBars}
@@ -69,24 +77,24 @@ const Header = ({ dropdown, toggleDropdown }) => {
         <div className="dropdown-menu">
           <ul className="nav-links">
             <li>
-              <a href="/jobs">Jobs</a>
+              <Link to="/jobs">Jobs</Link>
             </li>
             <li>
-              <a href="/employers">For employers</a>
+              <Link to="/employers">For employers</Link>
             </li>
             <li>
-              <a href="/resources">Resources</a>
+              <Link to="/resources">Resources</Link>
             </li>
             <li>
-              <a href="/support">Support</a>
+              <Link to="/support">Support</Link>
             </li>
           </ul>
-          <a className="cta2" href="/login">
+          <Link className="cta2" to="/login">
             <button>Log in</button>
-          </a>
-          <a href="/" className="cta">
+          </Link>
+          <Link to="/" className="cta">
             <button>Sign up</button>
-          </a>
+          </Link>
         </div>
       )}
     </>
