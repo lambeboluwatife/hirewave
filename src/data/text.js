@@ -10,6 +10,10 @@ import velocity from "../asset/Volicity 9.png";
 import chess from "../asset/chess.png";
 import goal from "../asset/goal.png";
 import convers from "../asset/convers.png";
+import market from "../asset/digitalMarket.png";
+import enterpreneur from "../asset/Enterpreneur.png";
+import graphic from "../asset/graphic.png";
+import product from "../asset/productM.png";
 
 export const searchOptions = [
   { title: "Work from home jobs", to: "" },
@@ -120,5 +124,36 @@ export const communityOptions = [
     description:
       "Join the dialogue on achieving a harmonious work-life balance. Exchange strategies and solutions to ensure your career thrives without compromising your well-being and personal life.",
     img: balance,
+  },
+];
+
+export const courseOptions = [
+  {
+    img: market,
+    title: "Digital Marketing Essentials",
+    price: "N8,000",
+    description:
+      "Dive into the world of digital marketing with this comprehensive course.",
+  },
+  {
+    img: product,
+    title: "Product Management Fundamentals",
+    price: "N10,000",
+    description:
+      "Acquire the foundational skills to manage projects successfully.",
+  },
+  {
+    img: enterpreneur,
+    title: "Entrepreneurship & Innovation",
+    price: "N6,000",
+    description:
+      "Learn how to transform innovative ideas into successful business ventures.",
+  },
+  {
+    img: graphic,
+    title: "Graphic Design Master",
+    price: "N7,000",
+    description:
+      "Unleash your creativity with graphic design essentials for digital and print media.",
   },
 ];
