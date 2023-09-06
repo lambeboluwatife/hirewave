@@ -89,10 +89,10 @@ const Header = ({ dropdown, toggleDropdown }) => {
               <Link to="/support">Support</Link>
             </li>
           </ul>
-          <Link className="cta2" to="/login">
+          <Link className="cta2" to="/sign-in">
             <button>Log in</button>
           </Link>
-          <Link to="/" className="cta">
+          <Link to="/sign-up" className="cta">
             <button>Sign up</button>
           </Link>
         </div>
