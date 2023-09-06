@@ -103,3 +103,75 @@ form button {
 .sign-in-details h6 a {
   color: #4d73f8;
 }
+
+/* Tablets and under */
+@media all and (max-width: 768px) {
+  .sign-in-details {
+    width: 100%;
+  }
+
+  .sign-in-details h6 {
+    color: #fff;
+  }
+
+  form {
+    margin-top: 2rem;
+  }
+
+  form input,
+  form button {
+    width: 100%;
+  }
+
+  .sign-in-details h6 a {
+    color: #1b0065;
+  }
+}
+
+/* Mobile */
+@media all and (max-width: 500px) {
+  .sign-in-details {
+    padding: 1rem 0;
+  }
+
+  .toggle-user {
+    margin-top: 2rem;
+  }
+
+  .toggle-user h3 {
+    padding: 0.5rem;
+    font-size: small;
+  }
+
+  form .input-box h6,
+  form .checkbox span {
+    font-size: 10px;
+    color: #fff;
+  }
+
+  input[type="checkbox"] {
+    width: 15px;
+  }
+
+  .sign-in-details h6 {
+    font-size: 12px;
+  }
+
+  form input,
+  form button {
+    height: 40px;
+  }
+}
+
+/* Mobile */
+@media all and (max-width: 320px) {
+  .sign-in .logo a {
+    padding-top: 1rem;
+    font-size: 20px;
+  }
+
+  .sign-in .logo svg {
+    width: 25px;
+    padding-top: 0;
+  }
+}
